@@ -10,7 +10,7 @@ interface ServiceCardProps {
 function ServiceCard({ title, subtitle, description }: ServiceCardProps) {
   return (
     <div
-      className="anim-up border p-7 pb-[22px] mb-[18px]"
+      className="anim-up border p-7 pb-[22px] md:mb-0 flex flex-col h-full"
       style={{ background: '#112035', borderColor: 'rgba(184,151,58,0.3)' }}
     >
       <span className="block mb-3 text-gold2">
@@ -24,8 +24,8 @@ function ServiceCard({ title, subtitle, description }: ServiceCardProps) {
           {subtitle}
         </div>
       )}
-      <p className="text-[13px] text-muted leading-[1.65] mb-5">{description}</p>
-      <a href={WA_LINK} target="_blank" rel="noreferrer" className="btn-sm">
+      <p className="text-[13px] text-muted leading-[1.65] mb-5 flex-grow">{description}</p>
+      <a href={WA_LINK} target="_blank" rel="noreferrer" className="btn-sm mt-auto">
         <WhatsAppIcon className="w-[14px] h-[14px] flex-shrink-0" />
         Fale com um Especialista
       </a>
@@ -125,7 +125,7 @@ const services: ServiceCardProps[] = [
 export default function Services() {
   return (
     <section className="py-14 px-5 bg-offwhite">
-      <div className="max-w-[440px] mx-auto sm:max-w-[520px]">
+      <div className="max-w-[440px] mx-auto sm:max-w-[520px] md:max-w-2xl lg:max-w-5xl 2xl:max-w-6xl">
         <div className="mb-9 text-center">
           <div
             className="text-[16px] font-bold tracking-[2px] uppercase leading-[1.3]"
@@ -135,9 +135,11 @@ export default function Services() {
           </div>
         </div>
 
-        {services.map((svc, i) => (
-          <ServiceCard key={i} {...svc} />
-        ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {services.map((svc, i) => (
+            <ServiceCard key={i} {...svc} />
+          ))}
+        </div>
       </div>
     </section>
   )

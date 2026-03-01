@@ -4,7 +4,7 @@ import { WhatsAppIcon, EmailIcon, InstagramIcon } from './icons'
 export default function Footer() {
   return (
     <footer className="bg-navy py-11 px-5 pb-7">
-      <div className="max-w-[440px] mx-auto sm:max-w-[520px]">
+      <div className="max-w-[440px] mx-auto sm:max-w-[520px] md:max-w-2xl lg:max-w-5xl 2xl:max-w-6xl">
         {/* FOOTER PHOTO / LOGO */}
         <div className="text-center mb-6">
           <img

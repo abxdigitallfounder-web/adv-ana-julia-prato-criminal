@@ -4,7 +4,7 @@ import { WhatsAppIcon } from './icons'
 export default function About() {
   return (
     <section className="py-14 px-5 bg-navy">
-      <div className="max-w-[440px] mx-auto sm:max-w-[520px]">
+      <div className="max-w-[440px] mx-auto sm:max-w-[520px] md:max-w-2xl lg:max-w-4xl 2xl:max-w-5xl">
         <img
           className="w-full max-w-[300px] mx-auto mb-7 border-2"
           style={{ borderColor: 'rgba(184,151,58,0.3)' }}

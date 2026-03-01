@@ -3,8 +3,8 @@ import { ShieldCheckIcon, TransparencyIcon } from './icons'
 export default function Values() {
   return (
     <section className="py-14 px-5" style={{ background: '#112035' }}>
-      <div className="max-w-[440px] mx-auto sm:max-w-[520px]">
-        <div className="flex flex-col gap-5">
+      <div className="max-w-[440px] mx-auto sm:max-w-[520px] md:max-w-2xl lg:max-w-5xl 2xl:max-w-6xl">
+        <div className="flex flex-col md:flex-row gap-5 md:gap-8">
           {/* Card 1 */}
           <div
             className="anim-up border p-8 text-center"

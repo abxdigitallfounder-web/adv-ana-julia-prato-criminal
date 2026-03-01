@@ -7,7 +7,7 @@ export default function Hero() {
       className="hero-grain relative overflow-hidden"
       style={{ background: 'linear-gradient(180deg,#0b1722 0%,#0e1d2e 60%,#0c1824 100%)' }}
     >
-      <div className="relative z-10 max-w-[440px] mx-auto px-6 pt-8 sm:max-w-[520px]">
+      <div className="relative z-10 max-w-[440px] mx-auto px-6 pt-8 sm:max-w-[520px] md:max-w-2xl lg:max-w-4xl 2xl:max-w-5xl">
         {/* LOGO */}
         <div className="flex flex-col items-center mb-9">
           <svg
@@ -92,7 +92,7 @@ export default function Hero() {
       </div>
 
       {/* HERO PHOTO */}
-      <div className="anim-fade w-full max-w-[440px] mx-auto mt-8 sm:max-w-[520px]">
+      <div className="anim-fade w-full max-w-[440px] mx-auto mt-8 sm:max-w-[520px] md:max-w-2xl lg:max-w-4xl 2xl:max-w-5xl">
         <img
           src={LAWYER_PHOTO}
           alt="Dra. Ana Julia Prato"
