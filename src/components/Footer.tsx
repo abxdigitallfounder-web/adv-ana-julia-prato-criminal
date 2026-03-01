@@ -1,4 +1,4 @@
-import { WA_LINK, FOOTER_PHOTO, AGENCY_LOGO } from '../constants'
+import { WA_LINK, FOOTER_PHOTO } from '../constants'
 import { WhatsAppIcon, EmailIcon, InstagramIcon } from './icons'
 
 export default function Footer() {
